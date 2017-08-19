@@ -56,31 +56,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BitmapPaser.cs" />
-    <Compile Include="MyCookie.cs" />
+    <Compile Include="Operator\Function.cs" />
+    <Compile Include="Operator\JSON.cs" />
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Object\OBJ_Bitmap.cs" />
-    <Compile Include="Object\OBJ_Pixel.cs" />
-    <Compile Include="Object\OBJ_Sess.cs" />
+    <Compile Include="Operator\MyCookieOperator.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Functions.cs" />
-    <Compile Include="GetApi.cs" />
-    <Compile Include="PostRequest.cs" />
+    <Compile Include="Object\OBJ_BitmapCode.cs" />
+    <Compile Include="Object\OBJ_Cookies.cs" />
+    <Compile Include="Object\OBJ_Pixel.cs" />
+    <Compile Include="Object\OBJ_Sess.cs" />
+    <Compile Include="Object\OriginBitmap.cs" />
+    <Compile Include="Operator\Poster.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs" />
-    <Compile Include="ShowCommands.cs" />
-    <Compile Include="TempletBitmap.cs" />
+    <Compile Include="Object\ShowCommands.cs" />
+    <Compile Include="Object\TempletBitmap.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,5 +132,6 @@
   <ItemGroup>
     <None Include="Resources\cover22.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
